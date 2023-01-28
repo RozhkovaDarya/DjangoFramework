@@ -1,4 +1,5 @@
 {% load static i18n %}
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="{% url 'mainapp:main_page' %}">
@@ -75,7 +76,7 @@
           <form action="{% url 'set_language' %}" method="post">
             {% csrf_token %}
             <input name="language" type="hidden" value="en">
-            <button type="submit" class="btn btn-link">EN</button>
+            <button type="submit" class="btn btn-link">EU</button>
           </form>
         </div>
       </div>
